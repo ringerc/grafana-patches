@@ -34,6 +34,11 @@ export interface FeatureToggles {
   */
   lokiExperimentalStreaming?: boolean;
   /**
+  * Forward allow-listed HTTP request headers from the user's request to data sources (per-datasource `jsonData.allowedHeaders`, gated by the `[datasource_forward_headers]` deny-list).
+  * @default false
+  */
+  datasourceForwardHeaders?: boolean;
+  /**
   * Highlight Grafana Enterprise features
   * @default false
   */
